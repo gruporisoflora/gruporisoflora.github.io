@@ -1,0 +1,57 @@
+#updates_wrapper{
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+}
+
+
+
+
+.progressWrapper{
+    text-align: left;
+    overflow: paged-y;
+    word-break: break-word;
+
+    -webkit-box-shadow: 3px 6px 15px 2px rgba(0,0,0,0.41);
+    -moz-box-shadow: 3px 6px 15px 2px rgba(0,0,0,0.41);
+    box-shadow: 3px 6px 15px 2px rgba(0,0,0,0.41);
+
+    max-width: 300px;
+
+    margin: 20px 40px 20px 0;
+
+}
+
+.progressWrapper h3 ,h4{
+    margin-left: 15px;
+
+    font-weight: 300;
+
+}
+
+.imageWrapper{
+    position: relative;
+
+
+
+}
+
+.progressWrapper img {
+    position: relative;
+
+
+
+    max-width: 300px;
+}
+
+.progressWrapper h3{
+    position: absolute;
+    margin-bottom: 6px !important;
+    bottom: 0;
+    color: #b5b5b5;
+
+}
+.progressWrapper h4{
+    color: #717171
+}
+
+
