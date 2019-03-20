@@ -22,7 +22,7 @@ class Header extends Component {
 
                 <div id='logo'>
                     <img src={logo}/>
-                    <h1 style={{color:"#ffffff"}}>Grupo <br/> risoflora</h1>
+                    
                     <div style={{marginTop:'150px'}} id="brandWrapper">
                         <img className="brand" src={celpe}/>
                         <img className="brand" src={cesar}/>

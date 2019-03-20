@@ -19,7 +19,7 @@ class Updates extends Component {
         return (
             <div id="updates_wrapper" >
                 <h2>Progresso e atualizações</h2>
-                <div style={{display:"flex"}}>
+                <div style={{display:"flex",flexWrap: 'wrap'}}>
                     {
                         UpdatesSet.map(item=>
                             <Progress title={item.title} description={item.description}/>
@@ -37,8 +37,8 @@ const Progress = (props) =>{
 
     return (
         <div className="progressWrapper">
-            <div className='imageWrapper' >
-                <img  src={no_photo}/>
+            <div className='imageWrapper'  >
+                
                 <h3 >{props.title}</h3>
             </div>
             <h4>{props.description}</h4>

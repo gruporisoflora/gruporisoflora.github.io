@@ -2,7 +2,7 @@ const Group = [
     {
         name:"João Victor Pessoa",
         email:"jvpass@cesar.school",
-        course:"Ciencia da computação"
+        course:"Ciência da computação"
     },
     {
         name:"Paula Soares",
@@ -12,18 +12,18 @@ const Group = [
     {
         name:"Otacilio Saraiva",
         email:"osmn@cesar.school",
-        course:"Ciencia da computação"
+        course:"Ciência da computação"
     },
 
     {
         name:"Mariana Polesi",
         email:"mmp@cesar.school",
-        course:"Degign"
+        course:"Design"
     },
     {
         name:"Jean Lucas",
         email:"jldm@cesar.school",
-        course:"Ciencia da computação"
+        course:"Ciência da computação"
     },
     {
         name:"Gabriel Barbosa",
@@ -33,7 +33,7 @@ const Group = [
     {
         name:"Caio de Barros",
         email:"cbrr@cesar.school",
-        course:"Ciencia da computação"
+        course:"Ciência da computação"
     },
     {
         name:"Carlos Alberto",
