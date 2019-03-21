@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lilita+One|Rajdhani');
 
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+
 .App {
   text-align: center;
 
@@ -35,7 +43,7 @@ h1{
   font-weight: 400
 }
 h2{
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'San Francisco'
 }
 
 h3,h4,h5{
