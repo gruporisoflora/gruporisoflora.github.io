@@ -1,21 +1,49 @@
 
 
 
-#logo{
+#header_wrapper{
 
     position: absolute;
+    height: 100%;
     top: 0;
-    bottom: 0;
-    left: 0;
+
+    max-height: 100%;
+
+
+
     right: 0;
-    margin: 40px auto 40px auto;
+    left: 0;
+
     z-index: 9999;
+    padding:0 30% 0 30%;
+
 }
+
+p{
+    font-size: 23px;
+}
+#logo_wrapper{
+    padding-top: 50px;
+}
+@media only screen and (max-width: 600px) {
+    #logo{
+        max-width: 150px;
+        padding-top: 15px;
+    }
+
+    #header_wrapper{
+        padding: 0 10% 0 10%;
+        overflow: scroll;
+    }
+}
+
+
 #brandWrapper{
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
+    margin-bottom: 20px;
 }
 .brand{
     max-width: 150px;

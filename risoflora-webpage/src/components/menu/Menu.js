@@ -20,8 +20,26 @@ class Menu extends Component {
                 'updates_wrapper',
                 'team_wrapper',
                 'objectives_wrapper'
-            ]
+            ],
+            shadow:'none'
+
         }
+
+        this.scrollEvent = e =>{
+            let color;
+            let shadow;
+            if(window.scrollY>0){
+                color = "#000000b0"
+                shadow = '0px 2px 5px 0px rgba(0,0,0,0.75)'
+
+            }else{
+                color = null
+                shadow='none'
+            }
+
+            this.setState({bgColor:color,shadow:shadow})
+        }
+
 
         this.onAnchor = i =>{
             let element = document.getElementById(this.state.anchors[i])
@@ -30,10 +48,17 @@ class Menu extends Component {
         }
     }
 
+    componentDidMount() {
+        window.addEventListener('scroll',this.scrollEvent)
+    }
+
 
     render() {
+
+        const {bgColor,shadow} = this.state;
+
         return (
-            <div id="menu_wrapper" >
+            <div id="menu_wrapper" style={{backgroundColor:bgColor,boxShadow:shadow}}>
                 <MenuItem anchor="0" icon={logo1} title="Acompanhe" onAnchor={this.onAnchor}/>
                 <MenuItem anchor="1"  icon={logo2} title="Nosso time"  onAnchor={this.onAnchor}/>
                 {//TODO Adicionar props de objetivo
@@ -48,8 +73,8 @@ class Menu extends Component {
 
 const MenuItem = (props) =>{
     return (
-        <div className='anchor' onClick={(i)=> props.onAnchor(props.anchor)}>
-            <img src={props.icon}/>
+        <div   className='anchor' onClick={(i)=> props.onAnchor(props.anchor)}>
+
             <h3>{props.title}</h3>
         </div>
     )
