@@ -28,7 +28,9 @@ class Menu extends Component {
         this.scrollEvent = e =>{
             let color;
             let shadow;
-            if(window.scrollY>0){
+
+            console.log(e)
+            if(e.target.scrollTop>0 || window.scrollY>0){
                 color = "#000000b0"
                 shadow = '0px 2px 5px 0px rgba(0,0,0,0.75)'
 
@@ -41,15 +43,12 @@ class Menu extends Component {
         }
 
 
-        this.onAnchor = i =>{
-            let element = document.getElementById(this.state.anchors[i])
 
-            element.scrollIntoView({behavior:"smooth",inline: "nearest"})
-        }
     }
 
     componentDidMount() {
         window.addEventListener('scroll',this.scrollEvent)
+        document.getElementById('header_wrapper').addEventListener('scroll',this.scrollEvent)
     }
 
 
@@ -59,8 +58,8 @@ class Menu extends Component {
 
         return (
             <div id="menu_wrapper" style={{backgroundColor:bgColor,boxShadow:shadow}}>
-                <MenuItem anchor="0" icon={logo1} title="Acompanhe" onAnchor={this.onAnchor}/>
-                <MenuItem anchor="1"  icon={logo2} title="Nosso time"  onAnchor={this.onAnchor}/>
+                <MenuItem anchor="0" icon={logo1} title="Acompanhe" onAnchor={this.props.onAnchor}/>
+                <MenuItem anchor="1"  icon={logo2} title="Nosso time"  onAnchor={this.props.onAnchor}/>
                 {//TODO Adicionar props de objetivo
                      }
                 <MenuItem anchor="2"  icon={logo3} title="Objetivos"/>

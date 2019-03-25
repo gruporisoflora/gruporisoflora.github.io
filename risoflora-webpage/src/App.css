@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lilita+One|Rajdhani');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 
 @font-face {
@@ -50,7 +51,7 @@ h1{
   font-weight: 400
 }
 h2{
-  font-family: 'San Francisco'
+  font-family: 'Amatic SC', cursive;
 }
 
 h3,h4,h5{

@@ -5,6 +5,7 @@ import './Updates.css'
 import no_photo from '../../res/img/no_image.jpg'
 
 import UpdatesSet from '../../utils/constants/Updates'
+import Divider from "../divider/Divider";
 
 class Updates extends Component {
 
@@ -17,16 +18,15 @@ class Updates extends Component {
 
     render() {
         return (
-            <div id="updates_wrapper" >
-                <h2>Progresso e atualizações</h2>
-                <div style={{display:"flex",flexWrap: 'wrap'}}>
+            <Divider title="Progresso e atualizações">
+                <div style={{display:"flex",flexWrap: 'wrap',justifyContent:'center'}}>
                     {
                         UpdatesSet.map(item=>
                             <Progress title={item.title} description={item.description}/>
                         )
                     }
                 </div>
-            </div>
+            </Divider>
         );
     }
 }

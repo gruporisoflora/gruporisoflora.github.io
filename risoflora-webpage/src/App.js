@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 
+import scrollToComponent from 'react-scroll-to-component';
+
+
 import {Header,Menu,Updates,Team} from './components/components'
 
 class App extends Component {
@@ -11,6 +14,14 @@ class App extends Component {
         super(props)
 
 
+
+
+        this.onAnchor = (i) =>{
+            let element = this.refs['item'+i]
+
+            scrollToComponent(element);
+
+        }
     }
 
 
@@ -20,10 +31,10 @@ class App extends Component {
 
           <Header></Header>
 
-          <Menu ></Menu>
+          <Menu onAnchor={this.onAnchor}></Menu>
 
-          <Updates/>
-          <Team/>
+          <Updates ref='item0'/>
+          <Team ref='item1'/>
 
 
       </div>

@@ -1,10 +1,3 @@
-#updates_wrapper{
-    margin-top: 20px;
-    padding: 0 20px 0 20px;
-}
-
-
-
 
 .progressWrapper{
     text-align: left;
@@ -17,7 +10,7 @@
 
     max-width: 400px;
 
-    margin: 20px 20px 20px 20px;
+    margin: 0px 20px 20px 0;
 
 }
 
@@ -30,11 +23,12 @@
 
 .imageWrapper{
     position: relative;
-    background-color:#2d2d2d;
+    background-color:#6cde5f;
     height: 50px;
 
 
 }
+
 
 .progressWrapper img {
     position: relative;
@@ -48,7 +42,7 @@
     position: absolute;
     margin-bottom: 6px !important;
     bottom: 0;
-    color: #b5b5b5;
+    color: #4a4747;
 
 }
 .progressWrapper h4{
