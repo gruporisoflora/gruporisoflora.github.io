@@ -7,7 +7,7 @@ import no_photo from '../../res/img/no_image.jpg'
 import UpdatesSet from '../../utils/constants/Updates'
 import Divider from "../divider/Divider";
 
-class Updates extends Component {
+class Updates extends Component {   
 
     constructor(props){
         super(props)
