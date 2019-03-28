@@ -1,0 +1,16 @@
+.photoWrapper{
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;    
+}
+
+
+.photoWrapper img{
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.photoWrapper img:hover{
+    transform: scale(1.2,1.2)
+}

@@ -6,7 +6,7 @@ import './App.css';
 import scrollToComponent from 'react-scroll-to-component';
 
 
-import {Header,Menu,Updates,Team} from './components/components'
+import {Header,Menu,Updates,Team, Gallery} from './components/components'
 
 class App extends Component {
 
@@ -35,7 +35,7 @@ class App extends Component {
 
           <Updates ref='item0'/>
           <Team ref='item1'/>
-
+          <Gallery/>
 
       </div>
     );

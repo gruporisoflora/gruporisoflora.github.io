@@ -3,4 +3,6 @@ import Menu  from './menu/Menu'
 import Updates from './update/Updates'
 import Team from './team/Team'
 
-export {Header,Menu,Updates,Team}
+import Gallery from './gallery/Gallery'
+
+export {Header,Menu,Updates,Team,Gallery}
