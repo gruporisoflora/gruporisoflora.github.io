@@ -35,7 +35,7 @@ class App extends Component {
 
           <Updates ref='item0'/>
           <Team ref='item1'/>
-          <Gallery/>
+          <Gallery ref='item2'/>
 
       </div>
     );

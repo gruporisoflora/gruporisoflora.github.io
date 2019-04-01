@@ -19,7 +19,7 @@ class Menu extends Component {
             anchors:[
                 'updates_wrapper',
                 'team_wrapper',
-                'objectives_wrapper'
+                'photosWrapper'
             ],
             shadow:'none'
 
@@ -62,7 +62,7 @@ class Menu extends Component {
                 <MenuItem anchor="1"  icon={logo2} title="Nosso time"  onAnchor={this.props.onAnchor}/>
                 {//TODO Adicionar props de objetivo
                      }
-                <MenuItem anchor="2"  icon={logo3} title="Objetivos"/>
+                <MenuItem anchor="2"  icon={logo3} title="Galeria" onAnchor={this.props.onAnchor} />
 
             </div>
         );

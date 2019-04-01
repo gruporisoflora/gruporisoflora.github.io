@@ -25,6 +25,7 @@
     position: relative;
     background-color:#6cde5f;
     height: 50px;
+    z-index: -1;
 
 
 }
