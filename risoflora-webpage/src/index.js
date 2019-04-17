@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import forest from  './res/img/forest.jpg'
+import forest from  './res/img/forest.png'
 
 document.getElementById('background_image').style.backgroundImage = "url("+forest+")"
 

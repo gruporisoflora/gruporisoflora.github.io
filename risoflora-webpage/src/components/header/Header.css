@@ -1,6 +1,5 @@
 
-
-
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 #header_wrapper{
 
     position: absolute;
@@ -15,19 +14,32 @@
     left: 0;
 
     
-    padding:0 30% 0 30%;
+    padding:0 200px 0 200px;
 
 
 }
 
 p{
-    font-size: 23px;
+
+    font-family: 'Lato', sans-serif;
+    
+    font-size: 20px;
+    margin: auto;
+    text-align: left;
+    margin-left: 20px;
 }
 #logo_wrapper{
-    padding-top: 50px;
+    
+    display: flex;
+    height: 100%;
+    
 
 }
 
+#logo{
+    margin : auto;
+    min-width: 30%;
+}
 #brandWrapper{
     position: absolute;
     left: 0;
@@ -41,24 +53,42 @@ p{
     max-height: 50px;
 
 }
+#cesar_logo{
+    height: auto; 
+    width: auto; 
+    padding-bottom: 6px;
+    min-height: 70px;
+    
+}
 
 
 
 @media only screen and (max-width: 1100px) {
     #logo{
         max-width: 150px;
-        padding-top: 15px;
+        padding-top: 60px;
     }
 
     #header_wrapper{
         padding: 0 10% 0 10%;
         overflow-y: scroll;
         overflow-x: hidden;
+       
+        
     }
 
     #brandWrapper{
         position: relative;
+        margin: 20px 0 20px 0;
     }
+    #logo_wrapper{
+        display: block;
+    }
+    p{
+        text-align: center;
+        padding-top:25px;
+    }
+    
 }
 
 
