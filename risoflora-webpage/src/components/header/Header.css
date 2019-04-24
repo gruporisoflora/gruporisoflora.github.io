@@ -73,6 +73,7 @@ p{
         padding: 0 10% 0 10%;
         overflow-y: scroll;
         overflow-x: hidden;
+        display: inline-grid
        
         
     }

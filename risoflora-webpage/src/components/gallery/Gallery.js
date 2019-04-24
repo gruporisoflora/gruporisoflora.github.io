@@ -93,13 +93,14 @@ const PhotoViwer = (props) =>{
             margin: '0 auto',
             verticalAlign: 'middle',
             opacity:'1',
-            maxHeight:'100%'
+            maxHeight:'100%',
+            
         }    
     }
     return (
         <div  className='imageViwerWrapper' style={{display:(display)?"inline":"none"}} onClick={onClick}>
         
-            <img src={url} style={style.image}/>
+            <img src={url} style={style.image} id="imageSource"/>
         </div>
     )
 }
