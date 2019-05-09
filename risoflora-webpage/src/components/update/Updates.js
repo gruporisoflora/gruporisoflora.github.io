@@ -6,6 +6,8 @@ import no_photo from '../../res/img/no_image.jpg'
 
 import UpdatesSet from '../../utils/constants/Updates'
 import Divider from "../divider/Divider";
+import Button from '@material-ui/core/Button';
+
 
 class Updates extends Component {   
 
@@ -15,6 +17,7 @@ class Updates extends Component {
 
     }
 
+    
 
     render() {
         return (
@@ -25,6 +28,12 @@ class Updates extends Component {
                             <Progress title={item.title} description={item.description}/>
                         )
                     }
+                </div>
+
+                <div style={{marginTop:'30px'}}> 
+                    <Button variant="outlined" onClick={(res)=>{window.location.href = 'http://inciclo-dashboard.s3-website.us-east-2.amazonaws.com'}} >
+                        Acompanhe a demo do dashboard 
+                    </Button>
                 </div>
             </Divider>
         );
